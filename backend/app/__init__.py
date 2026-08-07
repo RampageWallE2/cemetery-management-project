@@ -3,7 +3,10 @@ from flask import Flask
 from app.extensions import db, jwt, migrate
 from app.users.routes import users_bp
 from app.auth.routes import auth_bp
+
+#MAPEO DE LOS MODELOS DE LA BASE DE DATOS
 from app.users.model import User
+from app.locations.model import BurialSpace, Sector
 
 def create_app():
   
